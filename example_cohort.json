@@ -1,0 +1,22 @@
+{
+    "subject1": {
+        "constraint_file": "./subject1/constraints.json",
+        "gaits": [
+            "./data/subject1/path1.c3d",
+            "./data/subject1/path2.c3d"
+        ],
+        "healthy": true  ,
+        "constrained_model": false,
+        "model_file":"supr_male.npy"     
+    },
+    "subject2": {
+        "constraint_file": "./subject2/constraints.json",
+        "gaits": [
+            "./data/subject2/path1.c3d",
+            "./data/subject2/path2.c3d"
+        ],
+        "healthy": false,
+        "constrained_model": true,
+        "model_file":"supr_female_constrained.npy"
+    }
+}
