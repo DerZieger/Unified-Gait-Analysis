@@ -4,7 +4,7 @@ This repository contains a pipeline to unify clinical gait recordings into a com
 We then train a neural network using the unified data to classify the gait into healthy and sick.  
 Additionaly, we employ XAI methods to visualize the impact of the inputs on a statistical shape model to show what was pivotal according to the network.
 
-This code accompanies the paper **A Unified Pipeline for Explainable Gait Analysis** acceptted at [ShapeMI 2025](https://shapemi.github.io)
+This code accompanies the paper **A Unified Pipeline for Explainable Gait Analysis** accepted at [ShapeMI 2025](https://shapemi.github.io)
 
 
 ## Setup
