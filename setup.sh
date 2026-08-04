@@ -7,7 +7,7 @@ conda activate GuidingAttention
 pip install torch==2.5.1 torchvision --index-url https://download.pytorch.org/whl/cu124
 pip install torch-adopt ezc3d tqdm torchmetrics argparse pillow  imgui[full]  PyOpenGL  PyOpenGL_accelerate  glfw omegaconf loguru tensorboard
 
-git clone https://github.com/nghorbani/human_body_prior.git ./external/vposer
+git clone --revision=4c246d8a83ce16d3cff9c79dcf04d81fa440a6bc https://github.com/nghorbani/human_body_prior.git ./external/vposer
 git clone https://github.com/ahmedosman/SUPR.git ./external/supr
 git clone https://github.com/rodrigobdz/lrp.git ./external/lrp
 
