@@ -108,6 +108,9 @@ class Trainer:
             ):
                 break
 
+        if not progress_bar:
+            f.close()
+
         return (
             train_losses,
             eval_losses,
@@ -163,7 +166,10 @@ class Trainer:
 
             pbar.set_description(f"{loss.item():.3f}")
 
-        return_metric = [metric.compute() for metric in metrics]
+        return_metric = []
+        for metric in metrics:
+            return_metric.append(metric.compute())
+            metric.reset()
         return running_average / count, return_metric
 
     def run_with_one_parameter(
@@ -211,5 +217,8 @@ class Trainer:
 
             pbar.set_description(f"{loss.item():.3f}")
 
-        return_metric = [metric.compute() for metric in metrics]
+        return_metric = []
+        for metric in metrics:
+            return_metric.append(metric.compute())
+            metric.reset()
         return running_average / count, return_metric
