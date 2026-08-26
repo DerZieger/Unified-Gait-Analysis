@@ -139,7 +139,7 @@ class ParkGait(Dataset):
         number_healthy = 0  # Counter for healthy subjects
         number_sick = 0  # Counter for sick subjects
 
-        # Count healthy and sick occurrences
+        # Count healthy and sick subjects
         for name, data in json_data.items():
             for gait in data["gaits"]:
                 number_healthy += 1 if data["healthy"] else 0
@@ -191,7 +191,7 @@ class ParkGait(Dataset):
                     [
                         self.dictionary[label.strip()]
                         for label in point_labels
-                        if label in marker_names
+                        if label.strip() in marker_names
                     ]
                 ).to(torch.int)
 
