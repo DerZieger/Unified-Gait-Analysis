@@ -255,7 +255,7 @@ def main():
     )
 
     logger.save_metrics(save_folder)
-    logger.save_tensorboard(f"{save_folder}tensorboard_transformer")
+    logger.save_tensorboard(f"{save_folder}/tensorboard_mlp")
 
 
 if __name__ == "__main__":
