@@ -239,7 +239,7 @@ def main():
     if not on_cluster:
         traced_model = torch.jit.script(model)
         traced_model.save(
-            f"{save_folder}{interval_size}_{feat_dim}_{feat_head}_{merg_dim}_{merg_head}_{date_time}.pt"
+            f"{save_folder}{interval_size}_{pfe_dim}_{pfe_head}_{fc_dim}_{fc_head}_{date_time}.pt"
         )
 
 

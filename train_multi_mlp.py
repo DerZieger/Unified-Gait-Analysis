@@ -235,7 +235,7 @@ def main():
 
     torch.save(
         model,
-        f"{save_folder}/mlp_{date_time}.ckpt",
+        f"{save_folder}mlp_{date_time}.ckpt",
     )
 
     # Log results and save metrics
@@ -255,7 +255,7 @@ def main():
     )
 
     logger.save_metrics(save_folder)
-    logger.save_tensorboard(f"{save_folder}/tensorboard_mlp")
+    logger.save_tensorboard(f"{save_folder}tensorboard_mlp")
 
 
 if __name__ == "__main__":
